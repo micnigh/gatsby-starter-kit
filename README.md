@@ -12,6 +12,9 @@ npm run develop
 # build static site
 npm run build
 
+# run tests and watch
+npm run test:watch
+
 ```
 
 # How is this different from gatsby default starter?
@@ -42,7 +45,6 @@ about/
 
 # TODO
 
- - Add jest support
  - Add inline svg support
  - Add redux support
  - Use it in a real project

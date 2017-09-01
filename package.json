@@ -3,6 +3,32 @@
   "description": "Gatsby starter kit",
   "version": "1.0.0",
   "private": true,
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "test": "jest --env=jsdom",
+    "test:watch": "jest --watch --env=jsdom"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "\\.test\\.tsx?$",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
   "dependencies": {
     "gatsby": "^1.9.17",
     "gatsby-link": "^1.6.15",
@@ -14,16 +40,6 @@
     "normalizr": "^3.2.3",
     "styled-components": "^2.1.2",
     "typescript": "^2.5.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo 'TODO: jest --env=jsdom'"
   },
   "devDependencies": {
     "@types/jest": "^20.0.8",
@@ -37,6 +53,7 @@
     "jest": "^20.0.4",
     "prettier": "^1.6.1",
     "svg-icon": "^0.8.2",
+    "ts-jest": "^20.0.13",
     "tslint": "^5.7.0",
     "tslint-react": "^3.2.0"
   }
