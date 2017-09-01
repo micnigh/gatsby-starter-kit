@@ -1,18 +1,18 @@
-const path = require('path');
+import * as path from 'path';
 
-module.exports.createPages = async ({ boundActionCreators, graphql }) => {
+export const createPages = async ({ boundActionCreators, graphql }: any) => {
   const { createPage } = boundActionCreators;
 
   // create dynamic pages here
    
-}
+};
 
 // adjust page path logic here
 // below will:
 // page at root level, do nothing
 // page ends in `.page.tsx`, create page and adjust path to match without `.page`
 // otherwise delete the page as it is likely a support file such as styling or an asset
-module.exports.onCreatePage = async ({ page, boundActionCreators }) => {
+export const onCreatePage = async ({ page, boundActionCreators }: any) => {
   const { createPage, deletePage } = boundActionCreators;
   
   const relativeComponentPath = path.relative(`${__dirname}/src/pages/`, page.component);
@@ -30,12 +30,12 @@ module.exports.onCreatePage = async ({ page, boundActionCreators }) => {
     // not a page entry or root level page, remove
     deletePage({ path: page.path });
   }
-}
+};
 
-exports.modifyBabelrc = ({ babelrc }, { plugins, ...options }) => {
+export const modifyBabelrc = ({ babelrc }: any, { plugins, ...options }: any) => {
   return babelrc;
-}
+};
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
+export const modifyWebpackConfig = ({ config, stage }: any) => {
   return config;
 };
