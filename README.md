@@ -45,7 +45,6 @@ about/
 
 # TODO
 
- - Add inline svg support
  - Add redux support
  - Use it in a real project
 

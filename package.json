@@ -39,6 +39,7 @@
     "moment": "^2.18.1",
     "normalizr": "^3.2.3",
     "styled-components": "^2.1.2",
+    "svg-react-loader": "^0.4.5",
     "typescript": "^2.5.2"
   },
   "devDependencies": {
