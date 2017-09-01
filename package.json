@@ -1,0 +1,42 @@
+{
+  "name": "gatsby-starter-kit",
+  "description": "Gatsby starter kit",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "gatsby": "^1.9.17",
+    "gatsby-link": "^1.6.15",
+    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby-plugin-typescript": "^1.4.7",
+    "gatsby-plugin-styled-components": "^1.0.5",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "normalizr": "^3.2.3",
+    "styled-components": "^2.1.2",
+    "typescript": "^2.5.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "test": "echo 'TODO: jest --env=jsdom'"
+  },
+  "devDependencies": {
+    "@types/jest": "^20.0.8",
+    "@types/lodash": "^4.14.74",
+    "@types/marked": "^0.3.0",
+    "@types/node": "^8.0.25",
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "@types/react-helmet": "^5.0.3",
+    "@types/uuid": "^3.4.1",
+    "jest": "^20.0.4",
+    "prettier": "^1.6.1",
+    "svg-icon": "^0.8.2",
+    "tslint": "^5.7.0"
+  }
+}
