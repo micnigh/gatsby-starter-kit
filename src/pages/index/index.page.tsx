@@ -1,11 +1,11 @@
-import * as React from 'react'
-import Link from 'gatsby-link'
-import Helmet from "react-helmet";
+import * as React from 'react';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 
 const IndexPage = () => (
   <div>
     <Helmet
-      title="gatsby starter kit"
+      title='gatsby starter kit'
       meta={[
         { name: 'description', content: 'gatsby' },
         { name: 'keywords', content: 'gatsby' },
@@ -17,4 +17,4 @@ const IndexPage = () => (
   </div>
 )
 
-export default IndexPage
+export default IndexPage;

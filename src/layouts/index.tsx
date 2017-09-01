@@ -6,6 +6,6 @@ const TemplateWrapper = ({ children }) => (
   <div>
     {children()}
   </div>
-)
+);
 
-export default TemplateWrapper
+export default TemplateWrapper;
