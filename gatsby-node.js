@@ -31,3 +31,11 @@ module.exports.onCreatePage = async ({ page, boundActionCreators }) => {
     deletePage({ path: page.path });
   }
 }
+
+exports.modifyBabelrc = ({ babelrc }, { plugins, ...options }) => {
+  return babelrc;
+}
+
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  return config;
+};
